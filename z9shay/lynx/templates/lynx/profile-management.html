@@ -27,7 +27,8 @@
     <br />
 
     <form method="POST" autocomplete="off">
-      {% csrf_token %} {{user_form.username|as_crispy_field}}
+      {% csrf_token %}
+      {{user_form.username|as_crispy_field}}
 
       <br />
 
@@ -51,7 +52,8 @@
     <br />
 
     <form method="POST" autocomplete="off" enctype="multipart/form-data">
-      {% csrf_token %} {{profile_form.profile_pic|as_crispy_field}}
+      {% csrf_token %} 
+      {{profile_form.profile_pic|as_crispy_field}}
 
       <br />
       <br />
